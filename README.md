@@ -58,6 +58,9 @@ pipeline {
  }
 }
 ```
+* Выполнение пайпа
+![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z3-4.jpg)
+![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z3-3.jpg)
 ---
 
 
