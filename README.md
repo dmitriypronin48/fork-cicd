@@ -27,7 +27,8 @@
 
 ### Задание 3
 
-
+###### Установка Nexus
+![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z3-1.jpg)
 
 
 ---
