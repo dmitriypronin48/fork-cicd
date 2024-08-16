@@ -28,8 +28,10 @@
 ### Задание 3
 
 ###### Установка Nexus
+* Запуск Nexus в compose
 ![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z3-1.jpg)
-
+* Создание raw репозитория
+![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z3-2.jpg)
 
 ---
 
