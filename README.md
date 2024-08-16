@@ -21,7 +21,7 @@
 ###### Работа с pipeline declarative 
 ![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-3.jpg)
 ![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-2.jpg)
-![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-3.jpg)
+![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-1.jpg)
 
 ---
 
