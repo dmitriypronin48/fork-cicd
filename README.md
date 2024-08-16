@@ -33,6 +33,31 @@
 * Создание raw репозитория
 ![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z3-2.jpg)
 
+* Создание pipeline
+```
+pipeline {
+ agent any
+ stages {
+  stage('Git') {
+   steps {git 'https://github.com/netology-code/sdvps-materials.git'}
+  }
+  stage('Test') {
+   steps {
+    sh '/usr/local/go/bin/go test .'
+   }
+  }
+  stage('Build') {
+   steps {
+    sh '/usr/local/go/bin/go build -a -installsuffix nocgo -o go_result_$BUILD_NUMBER .'
+   }
+  }
+  stage('Push') {
+   steps {
+    sh 'curl -v --user "admin:admin" --upload-file ./go_result_$BUILD_NUMBER http://localhost:8081/repository/raw_repo/go_result_$BUILD_NUMBER'   }
+  }
+ }
+}
+```
 ---
 
 
