@@ -5,7 +5,7 @@
 
 ### Задание 1
 
-
+![альтернативный текст](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-1.jpg)
 
 
 
