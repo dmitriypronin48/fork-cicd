@@ -4,9 +4,13 @@
 
 ### Задание 1
 
-###### Установка Zabbix
-![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-1.jpg)
+###### Авторизация Zabbix
+![Установка Zabbix](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-1.jpg)
 
+###### Устновка postgress
+```
+apt install postgress
+```
 
 
 ---
