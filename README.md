@@ -93,7 +93,12 @@ apt update - обновляем кеш
 apt install zabbix-agent
 ```
 ###### Добавляем Host в Zabbix
-![Добавили хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-1.jpg)
+![Добавили первый хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-1.jpg)
+
+![Добавили второй хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-2.jpg)
+
+В настройках Zabbix agent скорректировал хост сервера
+![Добавили второй хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-3.jpg)
 
 ---
 
