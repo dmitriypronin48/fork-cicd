@@ -85,7 +85,7 @@ systemctl restart zabbix.server && systemctl restart apache2
 ### Задание 2
 
 ###### Установка Zabbix agent
-![Установка jenkins](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-3.jpg)
+
 
 
 ---
