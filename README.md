@@ -52,6 +52,7 @@ apt update && apt install php8.3-pgsql
 su - postgres
 ```
 Требуется провалиться в psql.
+
 ![Оболочка БД](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-2.jpg)
 
 Тут уже я применил ряд комманд:
