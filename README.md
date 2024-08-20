@@ -25,6 +25,28 @@ host    zabbix          zabbix          192.168.0.249/32        md5
 ```
 listen_addresses = '*'
 ```
+###### Устновка Zabbix
+Ориентировался на сборку вот такую https://www.zabbix.com/ru/download?zabbix=6.4&os_distribution=ubuntu&os_version=22.04&components=server_frontend_agent&db=pgsql&ws=apache
+```
+wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb   - выкачиваем deb пакет для репозиториев
+dpkg -i zabbix-release_6.4-1+ubuntu22.04_all.deb - добавляем репозитории
+apt update - обновляем кеш
+```
+Далее приступаем к самой установке.
+```
+apt install zabbix-server-pgsql zabbix-frontend-php php8.1-pgsql zabbix-apache-conf zabbix-sql-scripts
+```
+Но есть одно но, php8.1-pgsql очень плохо работает с версией php 8.3.10, об этом я уже узнал после установки.
+Пришлось удалять 
+```
+apt remove --purge php8.1-pgsql
+apt autoremove
+```
+Далее делаем еще раз установку компонента
+```
+apt update && apt install php8.3-pgsql
+```
+
 
 
 
