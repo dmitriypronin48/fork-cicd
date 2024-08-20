@@ -63,8 +63,20 @@ ALTER DATABASE zabbix OWNER TO zabbix; - назначение владельца
 ALTER ROLE zabbix WITH LOGIN; - создание роли к бд
 GRANT CONNECT ON DATABASE zabbix TO zabbix; - создание подключения к бд
 ```
-
-
+###### Вернемся к настройке Zabbix
+В конфиге /etc/zabbix/zabbix_server.conf требуется настроить само подключение
+Нас интересовали закоменченные строчки DBHost, DBName, DBUser, DBPassword, DBPort:
+```
+DBHost=192.168.0.249
+DBName=zabbix
+DBUser=zabbix
+DBPassword=123456789
+DBPort=5432
+```
+Когда поправил строчки на свои, требуется выполнить рестарт сервисов:
+```
+systemctl restart zabbix.server && systemctl restart apache2
+```
 
 
 
