@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Что такое DevOps. CI/CD`" - `Пронин Дмитрий Андреевич`
+# Домашнее задание к занятию "`Система мониторинга Zabbix`" - `Пронин Дмитрий Андреевич`
 
 ---
 
@@ -46,7 +46,23 @@ apt autoremove
 ```
 apt update && apt install php8.3-pgsql
 ```
+###### Пришла очередь поработать с БД.
+Заходим в оболочку БД.
+```
+su - postgres
+```
+Требуется провалиться в psql.
+![Оболочка БД](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-2.jpg)
 
+Тут уже я применил ряд комманд:
+```
+CREATE DATABASE zabbix; - создал БД
+CREATE USER zabbix WITH LOGIN PASSWORD '123456789'; -создание юзера для бд
+GRANT ALL PRIVILEGES ON DATABASE zabbix TO zabbix; - права для бд
+ALTER DATABASE zabbix OWNER TO zabbix; - назначение владельца бд
+ALTER ROLE zabbix WITH LOGIN; - создание роли к бд
+GRANT CONNECT ON DATABASE zabbix TO zabbix; - создание подключения к бд
+```
 
 
 
