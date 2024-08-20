@@ -25,7 +25,7 @@ host    zabbix          zabbix          192.168.0.249/32        md5
 ```
 listen_addresses = '*'
 ```
-###### Устновка Zabbix
+###### Установка Zabbix
 Ориентировался на сборку вот такую https://www.zabbix.com/ru/download?zabbix=6.4&os_distribution=ubuntu&os_version=22.04&components=server_frontend_agent&db=pgsql&ws=apache
 ```
 wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb   - выкачиваем deb пакет для репозиториев
