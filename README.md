@@ -98,7 +98,11 @@ apt install zabbix-agent
 ![Добавили второй хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-2.jpg)
 
 В настройках Zabbix agent скорректировал хост сервера
+
 ![Добавили второй хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-3.jpg)
+
+
+![Добавили второй хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-4.jpg)
 
 ---
 
