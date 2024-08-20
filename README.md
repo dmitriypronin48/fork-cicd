@@ -20,8 +20,14 @@ local   all             all                                     md5
 ```
 host    all             all             127.0.0.1/32            md5
 host    zabbix          zabbix          192.168.0.249/32        md5
-
 ```
+Для того чтобы пользователи могли подключаться не только по localhost, потребовалось скорректировать настройки в /etc/postgresql/14/main/postgresql.conf:
+```
+listen_addresses = '*'
+```
+
+
+
 
 
 ---
