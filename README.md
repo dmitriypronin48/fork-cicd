@@ -86,8 +86,14 @@ systemctl restart zabbix.server && systemctl restart apache2
 ### Задание 2
 
 ###### Установка Zabbix agent
-
-
+```
+wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb   - выкачиваем deb пакет для репозиториев
+dpkg -i zabbix-release_6.4-1+ubuntu22.04_all.deb - добавляем репозитории
+apt update - обновляем кеш
+apt install zabbix-agent
+```
+###### Добавляем Host в Zabbix
+![Добавили хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-1.jpg)
 
 ---
 
