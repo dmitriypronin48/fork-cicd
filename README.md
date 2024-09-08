@@ -37,4 +37,13 @@
 ###### Привяжите созданный шаблон к двум хостам. Также привяжите к обоим хостам шаблон Linux by Zabbix Agent.
 ![создание темплейта](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/zz3-1.jpg)
 ![создание темплейта](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/zz3-2.jpg)
+Данные сыпятся все ок.
+
+---
+
+### Задание 3
+
+
+
+
 
