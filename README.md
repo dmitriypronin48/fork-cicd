@@ -32,21 +32,9 @@
 ![создание темплейта](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/zz2-1.jpg)
 ![создание темплейта](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/zz2-2.jpg)
 
-
-
-###### Добавляем Host в Zabbix
-![Добавили первый хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-1.jpg)
-
-![Добавили второй хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-2.jpg)
-
-В настройках Zabbix agent скорректировал хост сервера
-
-![Добавили второй хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-3.jpg)
-
-
-![Добавили второй хост](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-4.jpg)
-
 ---
-
-
+### Задание 3
+###### Привяжите созданный шаблон к двум хостам. Также привяжите к обоим хостам шаблон Linux by Zabbix Agent.
+![создание темплейта](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/zz3-1.jpg)
+![создание темплейта](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/zz3-2.jpg)
 
