@@ -7,7 +7,12 @@
 ###### Авторизация Zabbix
 
 
+1. В веб-интерфейсе Zabbix Servera в разделе Templates создайте новый шаблон
+![создание темплейта](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/zz1-1.jpg)
 
+2. Создайте Item который будет собирать информацию об загрузке CPU в процентах
+3. Создайте Item который будет собирать информацию об загрузке RAM в процентах
+![создание темплейта](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/zz1-2-3.jpg)
 
 
 
