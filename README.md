@@ -36,22 +36,30 @@
 
 На проверку отправьте получившейся bash-скрипт и конфигурационный файл keepalived, а также скриншот с демонстрацией переезда плавающего ip на другой сервер в случае недоступности порта или файла index.html
 ```
+## Скрипт, который проверяет доступность порта, а так же конфига
+![скрипт](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-2.jpg)
 
-![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-2.jpg)
+## Конфиг nginx. К нему прикручены сертификаты, а так же прикрутил тестовый домен. 
+![](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-3.jpg)
 
-![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-3.jpg)
+Для nginx сделана index.html одинаковая, отличаются только IP. Сделал так, чтобы наглядно было понятно для себя, работает ли переключение или нет.
 
-![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-4.jpg)
+## конфиг keepalived для мастер машины
+![keepalived master](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-4.jpg)
 
-![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-5.jpg)
+## конфиг keepalived для бэкап машины
+![keepalived backup](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-5.jpg)
 
-![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-6.jpg)
+## Заходим по vip адресу на домен и попадаем на один из nginx, в нашем случае - это Мастер
+![проверка](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-6.jpg)
 
-![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-7.jpg)
+## Стопнул nginx. Проверить переключение
+![проверка2](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-7.jpg)
 
-![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-8.jpg)
+## Проверка переключения
+![проверка3](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-8.jpg)
 
-
+Для проверки работы скрипта, сделал простое переименование стартовой страницы index.html, скрипт в течении трех секунд проехался, понял, что чего то не хватает и выполнилось переключение на бэкап тачку.
 
 
 
