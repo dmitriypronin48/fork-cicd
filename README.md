@@ -37,5 +37,25 @@
 На проверку отправьте получившейся bash-скрипт и конфигурационный файл keepalived, а также скриншот с демонстрацией переезда плавающего ip на другой сервер в случае недоступности порта или файла index.html
 ```
 
+![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-2.jpg)
+
+![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-3.jpg)
+
+![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-4.jpg)
+
+![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-5.jpg)
+
+![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-6.jpg)
+
+![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-7.jpg)
+
+![не могу выполнить задание](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-8.jpg)
+
+
+
+
+
+
+
 
 
