@@ -11,6 +11,8 @@
 Настройте балансировку Round-robin на 4 уровне.
 На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 ```
+ссылка на конфиг - https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-config
+
 ![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-2.jpg)
 
 
