@@ -36,4 +36,20 @@
 
 ![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-1.jpg)
 
+```
+#!/bin/bash
 
+log_access="/opt/log_acces_backup" #успешно выполнился
+log_error="/opt/log_error_backup"  #не успешно выполнился
+
+# Создание бэкапа
+rsync -av --delete --checksum /home/developer/ /tmp/backup/ 2>> "$log_error"
+status_code=$?  # Сохраняем код выхода rsync
+if [ $status_code -eq 0 ]; then
+    echo "Бекап сделан от $(date)" >> "$log_access"
+    exit 0
+else
+    echo "Что то не так, проблема от $(date) , ошибка $status_code " >> "$log_error"
+    exit 1
+fi
+```
