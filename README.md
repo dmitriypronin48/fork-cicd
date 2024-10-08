@@ -53,3 +53,4 @@ else
     exit 1
 fi
 ```
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-2.jpg)
