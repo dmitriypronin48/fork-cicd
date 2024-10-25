@@ -40,7 +40,6 @@
 
 Через redis-cli достаньте все записанные ключи и значения из базы, приведите скриншот этой операции.
 
-
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-3.jpg)
 ---
 
-![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-2.jpg)
