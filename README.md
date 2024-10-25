@@ -19,7 +19,7 @@
 
 Приведите скриншот systemctl status memcached, где будет видно, что memcached запущен.
 
-
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z2-1.jpg)
 
 
 
