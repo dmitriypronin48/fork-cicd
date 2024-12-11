@@ -30,6 +30,9 @@
 
 Приведите скриншот интерфейса Kibana, на котором видны логи Nginx.
 
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z3-1.jpg)
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z3-2.jpg)
+
 ---
 
 ### Задание 4
