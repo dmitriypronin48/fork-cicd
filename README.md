@@ -33,6 +33,8 @@ SHOW GRANTS FOR sys_temp;
 ```
 ALTER USER 'sys_temp'@'%' IDENTIFIED WITH mysql_native_password BY 'qwerty99';
 ```
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-6.jpg
+
 1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
 
 1.7. Восстановите дамп в базу данных.
