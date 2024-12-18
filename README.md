@@ -31,7 +31,7 @@ SHOW GRANTS FOR sys_temp;
 
 Для смены типа аутентификации с sha2 используйте запрос:
 ```
-ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+ALTER USER 'sys_temp'@'%' IDENTIFIED WITH mysql_native_password BY 'qwerty99';
 ```
 1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
 
