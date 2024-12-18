@@ -6,14 +6,27 @@
 1.1. Поднимите чистый инстанс MySQL версии 8.0+. Можно использовать локальный сервер или контейнер Docker.
 
 1.2. Создайте учётную запись sys_temp.
+```
+CREATE USER 'sys_temp'@'%' IDENTIFIED BY 'qwerty99';
+```
 
 1.3. Выполните запрос на получение списка пользователей в базе данных. 
+```
+SELECT User, Host FROM mysql.user;
+```
 ![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-1.jpg)
 
 1.4. Дайте все права для пользователя sys_temp.
+```
+GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'%';
+```
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-2.jpg)
 
 1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
-
+```
+SHOW GRANTS FOR sys_temp;
+```
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-3.jpg)
 1.6. Переподключитесь к базе данных от имени sys_temp.
 
 Для смены типа аутентификации с sha2 используйте запрос:
