@@ -64,7 +64,44 @@ mysql -u sys_temp -p sakila < sakila-data.sql
 customer         | customer_id
 ```
 
-
+```
+mysql> SELECT
+    ->     kcu.TABLE_NAME,
+    ->     kcu.COLUMN_NAME,
+    ->     tc.CONSTRAINT_NAME AS PRIMARY_KEY_NAME
+    -> FROM
+    ->     INFORMATION_SCHEMA.KEY_COLUMN_USAGE AS kcu
+    -> JOIN
+    ->     INFORMATION_SCHEMA.TABLE_CONSTRAINTS AS tc
+    ->     ON kcu.TABLE_NAME = tc.TABLE_NAME
+    ->     AND kcu.TABLE_SCHEMA = tc.TABLE_SCHEMA
+    ->     AND kcu.CONSTRAINT_NAME = tc.CONSTRAINT_NAME
+    -> WHERE
+    ->     kcu.TABLE_SCHEMA = 'sakila'
+    ->     AND tc.CONSTRAINT_TYPE = 'PRIMARY KEY';
++---------------+--------------+------------------+
+| TABLE_NAME    | COLUMN_NAME  | PRIMARY_KEY_NAME |
++---------------+--------------+------------------+
+| actor         | actor_id     | PRIMARY          |
+| address       | address_id   | PRIMARY          |
+| category      | category_id  | PRIMARY          |
+| city          | city_id      | PRIMARY          |
+| country       | country_id   | PRIMARY          |
+| customer      | customer_id  | PRIMARY          |
+| film          | film_id      | PRIMARY          |
+| film_actor    | actor_id     | PRIMARY          |
+| film_actor    | film_id      | PRIMARY          |
+| film_category | film_id      | PRIMARY          |
+| film_category | category_id  | PRIMARY          |
+| film_text     | film_id      | PRIMARY          |
+| inventory     | inventory_id | PRIMARY          |
+| language      | language_id  | PRIMARY          |
+| payment       | payment_id   | PRIMARY          |
+| rental        | rental_id    | PRIMARY          |
+| staff         | staff_id     | PRIMARY          |
+| store         | store_id     | PRIMARY          |
++---------------+--------------+------------------+
+```
 
 
 
