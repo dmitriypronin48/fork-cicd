@@ -36,17 +36,22 @@ ALTER USER 'sys_temp'@'%' IDENTIFIED WITH mysql_native_password BY 'qwerty99';
 ![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-6.jpg
 
 1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
+```
+wget https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных
+
+```
 
 1.7. Восстановите дамп в базу данных.
-
+```
+Изначально подрубился к бд и сделал там CREATE DATABASE sakila;
+mysql -u sys_temp -p sakila < sakila-schema.sql
+mysql -u sys_temp -p sakila < sakila-data.sql
+```
 1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
 
 Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.
 
-
-
-
-![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-1.jpg)
+![скрин](https://github.com/dmitriypronin48/fork-cicd/blob/main/img/z1-7.jpg)
 
 ---
 
